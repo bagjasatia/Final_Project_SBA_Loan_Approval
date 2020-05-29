@@ -41,12 +41,19 @@ The application user can input data as described below:
 
 PREDICTION RESULT
 ---
-Customer will agree to create new credit card
+The prediction result interface:
 ![](https://github.com/bagjasatia/Final_Project_SBA_Loan_Approval/blob/master/Interface/result-interface.png)
 
 VISUALISATION PAGE
 ---
+Histogram
 ![](https://github.com/bagjasatia/Final_Project_SBA_Loan_Approval/blob/master/Interface/boxplot-interface.png)
+
+Boxplot
 ![](https://github.com/bagjasatia/Final_Project_SBA_Loan_Approval/blob/master/Interface/histogram-interface.png)
+
+Scatter Plot
 ![](https://github.com/bagjasatia/Final_Project_SBA_Loan_Approval/blob/master/Interface/scatter-interface.png)
+
+Pie Chart
 ![](https://github.com/bagjasatia/Final_Project_SBA_Loan_Approval/blob/master/Interface/pie-chart-interface.png)
