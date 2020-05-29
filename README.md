@@ -33,7 +33,7 @@ PREDICTION PAGE
 The application user can input data as described below:
 - `NewExist`               : Business Condition when the loan is set.
 - `RevLineCr`              : Revolving line of credit which means that if the loan has been paid, the borrower can be able to immediately borrow again.
-- `LowDoc            `     : LowDoc Loan Program which means borrowing with little administration.
+- `LowDoc            `     : LowDoc Loan Program means the borrower can borrow with little administration..
 - `NAICS`                  : North American industry classification system code
 - `Term`                   : The term provides information on how long the loan will take
 - `GrAppv`                 : Gross amount of loan approved by bank
