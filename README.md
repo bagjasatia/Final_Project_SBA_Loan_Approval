@@ -27,40 +27,26 @@ The goal of the project is to reduce the risk of charge off credit loans for Sma
 
 APPS
 ---
-HOME PAGE
-![](https://github.com/x-conx/Purwadhika_Projct_Finale/blob/master/presentation%20pic/home.png)
-
 PREDICTION PAGE 
-![](https://github.com/x-conx/Purwadhika_Projct_Finale/blob/master/presentation%20pic/input.png)
+![](https://github.com/bagjasatia/Final_Project_SBA_Loan_Approval/blob/master/Interface/predict-interface.png)
 
 The application user can input data as described below:
-- `How many bank account?` : number of bank account that customer cuurently holding
-- `Household size`         : indication of approximate customers' current house size judgement from scale 1 to 6, 1 for very small and 6 for very large
-- `Owned Current Home`     : if customer currently stay at personal home or not
-- `Credit Rating`          : the rating that given by bank system (rating of an ability in term of financial performance)
-- `Average Balance`        : the average amount of moneny that present in the customer's bank account fot the last 12 months or last financial year
-- `Q1 Balance`             : first quarter balance from last financial year
-- `Q2 Balance`             : second quarter balance from last financial year
-- `Q3 Balance`             : third quarter balance from last financial year
-- `Q4 Balance`             : fourth quarter balance from last financial year
-- `Customer Reward`        : the current reward that applied to customer
-- `Mailer Type`            : how customer will receive the current credit card advertising
-- `Customer Income`        : an approximation of customer's level of income in low, medium, and high
-- `Card Overdraw Protection`: the current status of cutomer's credit card, either their card can be used over the limit or not
-- `Own Number CC`          : most of the customer already have credit card before they receive or decided to create a new one
-- `Home(s) Owned`          : number of home(s) that under customer's name
+- `NewExist`               : Business Condition when the loan is set.
+- `RevLineCr`              : Revolving line of credit which means that if the loan has been paid, the borrower can be able to immediately borrow again.
+- `LowDoc            `     : LowDoc Loan Program which means borrowing with little administration.
+- `NAICS`                  : North American industry classification system code
+- `Term`                   : The term provides information on how long the loan will take
+- `GrAppv`                 : Gross amount of loan approved by bank
+- `SBA_Appv`               : SBA's guaranteed amount of approved loan
 
 PREDICTION RESULT
 ---
 Customer will agree to create new credit card
-![](https://github.com/x-conx/Purwadhika_Projct_Finale/blob/master/presentation%20pic/agree.png)
-Customer will not create a new credit card
-![](https://github.com/x-conx/Purwadhika_Projct_Finale/blob/master/presentation%20pic/decline.png)
+![](https://github.com/bagjasatia/Final_Project_SBA_Loan_Approval/blob/master/Interface/result-interface.png)
 
 VISUALISATION PAGE
 ---
-![](https://github.com/x-conx/Purwadhika_Projct_Finale/blob/master/presentation%20pic/vis.png)
-
-ABOUT
----
-![](https://github.com/x-conx/Purwadhika_Projct_Finale/blob/master/presentation%20pic/about.png)
+![](https://github.com/bagjasatia/Final_Project_SBA_Loan_Approval/blob/master/Interface/boxplot-interface.png)
+![](https://github.com/bagjasatia/Final_Project_SBA_Loan_Approval/blob/master/Interface/histogram-interface.png)
+![](https://github.com/bagjasatia/Final_Project_SBA_Loan_Approval/blob/master/Interface/scatter-interface.png)
+![](https://github.com/bagjasatia/Final_Project_SBA_Loan_Approval/blob/master/Interface/pie-chart-interface.png)
