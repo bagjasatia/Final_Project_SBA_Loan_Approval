@@ -1,0 +1,41 @@
+{% extends 'index.html' %}
+{% block content %}
+    <form action="{{ url_for('pie_fn') }}" id='form'>
+        <div class="row d-flex justify-content-around" >
+
+            <!-- Hue -->
+            <select class="col-2 form-control" name="hue" onchange="form.submit()">
+                {% if focus_hue == 'NewExist'%}
+                    <option value="NewExist" selected>NewExist</option>
+                    <option value="RevLineCr">RevLineCr</option>
+                    <option value="LowDoc">LowDoc</option>
+                    <option value="MIS_Status">MIS_Status</option>
+                {% elif focus_hue == 'RevLineCr' %}
+                    <option value="NewExist">NewExist</option>
+                    <option value="RevLineCr" selected>RevLineCr</option>
+                    <option value="LowDoc">LowDoc</option>
+                    <option value="MIS_Status">MIS_Status</option>
+                {% elif focus_hue == 'LowDoc' %}
+                    <option value="NewExist">NewExist</option>
+                    <option value="RevLineCr" >RevLineCr</option>
+                    <option value="LowDoc" selected>LowDoc</option>
+                    <option value="MIS_Status">MIS_Status</option>
+                {% elif focus_hue == 'MIS_Status' %}
+                    <option value="NewExist">NewExist</option>
+                    <option value="RevLineCr">RevLineCr</option>
+                    <option value="LowDoc">LowDoc</option>
+                    <option value="MIS_Status" selected>MIS_Status</option>
+                {% endif %}
+            </select>
+
+        </div>
+    </form>
+
+    <!-- Plot -->
+    <div class="chart mt-4" id="plot">
+        <script>
+            var graphs = {{plot | safe}};
+            Plotly.plot('plot',graphs,{});
+        </script>
+    </div>
+{% endblock  %}

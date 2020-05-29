@@ -1,0 +1,52 @@
+{% extends 'index.html' %}
+{% block content %}
+    <form action="{{ url_for('scatt_fn') }}" id='form'>
+        <div class="row d-flex justify-content-around" >
+
+            <!-- Sumbu X -->
+            <select class="col-2 form-control" name="cat_x" onchange="form.submit()">
+                {% if focus_x == 'Term' %}
+                    <option value="Term" selected>Term</option>
+                    <option value="GrAppv">GrAppv</option>
+                    <option value="SBA_Appv">SBA_Appv</option>
+                {% elif focus_x == 'GrAppv' %}
+                    <option value="Term" >Term</option>
+                    <option value="GrAppv" selected>GrAppv</option>
+                    <option value="SBA_Appv">SBA_Appv</option>
+                {% elif focus_x == 'SBA_Appv' %}
+                    <option value="Term">Term</option>
+                    <option value="GrAppv">GrAppv</option>
+                    <option value="SBA_Appv" selected>SBA_Appv</option>
+                {% endif %}
+            </select>
+
+            
+            <!-- Sumbu Y -->
+            <select class="col-2 form-control" name="cat_y" onchange="form.submit()">
+                {% if focus_y == 'Term' %}
+                    <option value="Term" selected>Term</option>
+                    <option value="GrAppv">GrAppv</option>
+                    <option value="SBA_Appv">SBA_Appv</option>
+                {% elif focus_y == 'GrAppv' %}
+                    <option value="Term" >Term</option>
+                    <option value="GrAppv" selected>GrAppv</option>
+                    <option value="SBA_Appv">SBA_Appv</option>
+                {% elif focus_y == 'SBA_Appv' %}
+                    <option value="Term">Term</option>
+                    <option value="GrAppv">GrAppv</option>
+                    <option value="SBA_Appv" selected>SBA_Appv</option>
+                {% endif %}
+            </select>
+
+            
+        </div>
+    </form>
+
+    <!-- Plot -->
+    <div class="chart mt-4" id="plot">
+        <script>
+            var graphs = {{plot | safe}};
+            Plotly.plot('plot',graphs,{});
+        </script>
+    </div>
+{% endblock  %}
