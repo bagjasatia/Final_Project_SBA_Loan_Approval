@@ -14,6 +14,20 @@ app = Flask(__name__)
 SBA = pd.read_csv('SBAnational.csv')
 SBA = SBA.head(100)
 
+@app.route('/')
+def home():
+    return render_template('home.html')
+
+# Render Picture
+@app.route('/static/<path:x>')
+def gal(x):
+    return send_from_directory("static",x)
+
+# Render About page
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 # # # # # # # # # #
 # HISTOGRAM & BOX #
 # # # # # # # # # #
@@ -62,7 +76,7 @@ def category_plot(cat_plot = 'histoplot', cat_x = 'NewExist', cat_y = 'Term', es
 
     return graphJSON
 
-@app.route('/')
+@app.route('/index')
 def index():
     plot = category_plot()
 
@@ -228,10 +242,12 @@ def pie_fn():
 
     return render_template('pie.html', plot=plot_source, focus_hue=hue_source)
 
+# Prediction Page
 @app.route('/predict')
 def predict():
     return render_template('predict.html')
 
+# Result Page
 @app.route('/SBA_Loan_Result', methods=["POST", "GET"])
 def SBA_Loan_predict():
     if request.method == "POST":
