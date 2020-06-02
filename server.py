@@ -371,5 +371,5 @@ def SBA_Loan_predict():
         LowDoc=LowDocRes, NAICS=NAICSRes)
 
 if __name__ == '__main__':
-    gbc = joblib.load('gbc_SBA_Loan')
+    gbc = joblib.load('gbc_SBA_Loan_oversampling')
     app.run(debug=True, port=4000)
