@@ -4,7 +4,7 @@ by: Bagja Satiaraharja
 
 Dataset: SBAnational.csv [gdrive](https://drive.google.com/file/d/10cSCOrt7y2XY05J7AeX5FmIbLa3wLtQV/view?usp=sharing)
 
-*The dataset is separate from the repository because it exceeds the github file size limit.
+*The dataset is separate from the repository because it exceeds github file size limit.
 
 
 Source : [kaggle](https://www.kaggle.com/mirbektoktogaraev/should-this-loan-be-approved-or-denied)
