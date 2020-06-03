@@ -27,7 +27,17 @@ The goal of the project is to reduce the risk of charge off credit loans for Sma
 
 APPS
 ---
+
+HOMEPAGE
+---
+Home interface:
+![](https://github.com/bagjasatia/Final_Project_SBA_Loan_Approval/blob/master/Interface/home-interface.png)
+
+About interface:
+![](https://github.com/bagjasatia/Final_Project_SBA_Loan_Approval/blob/master/Interface/about-interface.png)
+
 PREDICTION PAGE 
+---
 ![](https://github.com/bagjasatia/Final_Project_SBA_Loan_Approval/blob/master/Interface/predict-interface.png)
 
 The application user can input data as described below:
