@@ -18,7 +18,10 @@ The dataset is from the U.S. Small Business Administration (SBA)
 
 The U.S. SBA was founded in 1953 on the principle of promoting and assisting small enterprises in the U.S. credit market (SBA Overview and History, US Small Business Administration (2015)). Small businesses have been a primary source of job creation in the United States; therefore, fostering small business formation and growth has social benefits by creating job opportunities and reducing unemployment. There have been many success stories of start-ups receiving SBA loan guarantees such as FedEx and Apple Computer. However, there have also been stories of small businesses and/or start-ups that have defaulted on their SBA-guaranteed loans.
 
-In this final project, I will build a Flask-based web app that can recommend whether the loan is approved or not based on the given term and loan condition.
+From the U.S. Small Business Administration dataset. We can learn that around 17.6% of loans guaranteed by the U.S. Small Business Administration have a financial problem. If this condition happens with a big frequency and amount of loan, it can make a big loss to SBA and the bank as a lender and lead to bankruptcy to the institution.
+
+In this final project, I will build a Flask-based web app that can recommend whether the loan is approved or not based on the given term and loan condition. The project's main mission is to reduce the risk of charge off credit loans for U.S.Small Business Administration institutions. 
+
 
 PROJECT GOALS
 ---
